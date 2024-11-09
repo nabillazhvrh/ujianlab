@@ -1,0 +1,140 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Container for the whole layout */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Kolom kiri untuk logo atau gambar */
+.left-column {
+    flex: 1;
+    background-color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.left-column .logo {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Kolom kanan untuk form login */
+.right-column {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box untuk form login */
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling untuk input fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling untuk tombol login */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk footer links */
+.footer-links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color:  white;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-column, .right-column {
+        flex: none;
+        width: 100%;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+}
